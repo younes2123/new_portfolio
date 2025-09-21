@@ -3,10 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Software Engineer Portfolio</title>
   </head>
   <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a brief introduction about myself.</p>
+    <header>
+      <div class="logo">Younes Fatihi</div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            I build simple systems that evolve into scalable complex solutions
+          </h1>
+          <p>
+            Software engineer specializing in creating elegant, maintainable
+            systems that grow with your needs.
+          </p>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+      </div>
+      <canvas id="system-canvas"></canvas>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>My Engineering Philosophy</h3>
+            <p>
+              I believe the most effective software solutions start with
+              simplicity. By focusing on clean, minimal implementations, we
+              create systems that are understandable, maintainable, and most
+              importantly, adaptable.
+            </p>
+            <p>
+              Through careful design and thoughtful architecture, these simple
+              foundations can gracefully evolve to handle complex requirements
+              and scale to meet growing demands.
+            </p>
+
+            <div class="philosophy-block">
+              <p>
+                "I like to build simple systems that will invariably evolve to
+                become a scalable complex system"
+              </p>
+            </div>
+          </div>
+          <div class="about-visual">
+            <!-- This would be a visual representation of the philosophy -->
+            <div
+              style="
+                background-color: #eee;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+              "
+            >
+              <p>Visualization of system evolution</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" style="background-color: white">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend Development</h3>
+            <p>React, Vue, Angular, TypeScript, HTML5, CSS3, Web Components</p>
+          </div>
+          <div class="skill-card">
+            <h3>Backend Development</h3>
+            <p>Node.js, Python, Java, Go, REST APIs, GraphQL, Microservices</p>
+          </div>
+          <div class="skill-card">
+            <h3>Database Systems</h3>
+            <p>
+              PostgreSQL, MongoDB, Redis, Elasticsearch, Database Architecture
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>DevOps & Cloud</h3>
+            <p>
+              AWS, Docker, Kubernetes, CI/CD, Terraform, System Architecture
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img">Project Image</div>
+            <div class="project-content">
+              <h3>Microservice Architecture</h3>
+              <p>
+                A scalable backend system that started as a simple monolith and
+                evolved into a distributed microservice architecture.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">Project Image</div>
+            <div class="project-content">
+              <h3>Data Processing Pipeline</h3>
+              <p>
+                Started as a simple script and grew into a complex real-time
+                data processing system handling millions of events daily.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">Project Image</div>
+            <div class="project-content">
+              <h3>Progressive Web App</h3>
+              <p>
+                A mobile application that began as a simple website and evolved
+                into a fully-featured offline-capable PWA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="background-color: white">
+      <div class="container">
+        <div class="contact-content">
+          <h2>Get In Touch</h2>
+          <p>
+            I'm always interested in discussing new projects and opportunities
+            to create elegant software solutions.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:hello@example.com">Email</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Simple→Complex Systems. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
