@@ -2,17 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --primary: #d10000ff;
+  --bg-color: #d10000ff;
+  --primary: #fff;
   --secondary: #000000;
-  --accent: #800707ff;
+  --accent: #ff434371;
 }
 
 body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
   line-height: 1.6;
-  color: var--secondary;
-  background-color: #f8f9fa;
-  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  color: var(--primary);
+  background: url('./assets/images/bg-pattern.png');
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -28,7 +31,6 @@ header {
   width: 100%;
   top: 0;
   z-index: 100;
-  background-color: rgba(248, 249, 250, 0.95);
   backdrop-filter: blur(5px);
   text-align: center;
 }
@@ -36,7 +38,7 @@ header {
 .logo {
   font-weight: 700;
   font-size: 1.5rem;
-  color: #d10000ff;
+  color: var(--primary);
 }
 
 /* Hero section */
@@ -59,26 +61,23 @@ header {
   line-height: 1.2;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #666;
-}
-
 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
   background-color: var(--primary);
-  color: white;
+  color: var(--bg-color);
   text-decoration: none;
   border-radius: 4px;
   font-weight: 500;
   transition: all 0.3s;
+  border: 2px dashed #000;
 }
 
 .btn:hover {
   background-color: var(--accent);
   transform: translateY(-2px);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 /* Canvas for animation */
@@ -113,6 +112,7 @@ section h2 {
 .about-text h3 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  text-decoration: underline;
 }
 
 .philosophy-block {
@@ -121,10 +121,17 @@ section h2 {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   margin-top: 2rem;
-  border-left: 4px solid var(--primary);
+  color: #000;
+  text-decoration: italic;
+  border-left: 4px solid #000;
 }
 
 /* Skills section */
+
+#skills {
+  color: #000;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -146,7 +153,7 @@ section h2 {
 
 .skill-card h3 {
   margin-bottom: 1rem;
-  color: var(--primary);
+  color: var(--bg-color);
 }
 
 /* Projects section */
@@ -157,6 +164,7 @@ section h2 {
 }
 
 .project-card {
+  color: #000;
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -184,6 +192,7 @@ section h2 {
 
 .project-content h3 {
   margin-bottom: 0.5rem;
+  color: var(--bg-color);
 }
 
 /* Contact section */
@@ -191,6 +200,7 @@ section h2 {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  color: var(--bg-color);
 }
 
 .contact-links {
@@ -201,14 +211,14 @@ section h2 {
 }
 
 .contact-links a {
-  color: var(--primary);
-  text-decoration: none;
+  color: #000;
+  text-decoration: underline;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .contact-links a:hover {
-  color: #3730a3;
+  color: var(--accent);
 }
 
 /* Footer */
